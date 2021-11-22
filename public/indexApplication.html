@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link">Phonebook - Add</a></li>
+            <li class="nav-item"><a href="/listphonebook" class="nav-link">Phonebook - List</a></li>
+            <li class="nav-item"><a href="/applsave" class="nav-link active" aria-current="page">Application - Add</a></li>
+            <li class="nav-item"><a href="/appl" class="nav-link">Application - List</a></li>
+        </ul>
+    </header>
+
+    <meta charset="UTF-8">
+    <title>Add persons in Application</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body class="bck">
+<form action="/saveapplication" method="post">
+    <h1>Application - Add The Person Page</h1>
+    <fieldset class="main">
+        <legend>Add The Person Page</legend>
+        <table class="field">
+            <tr>
+                <td><label for="firstname">Firstname:</label></td>
+               <td><input type="text" id="firstname" name="firstname"></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Lastname:</label></td>
+                <td><input type="text" id="lastname" name="lastname"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><input type="text" id="address" name="address"></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="text" id="age" name="age"></td>
+            </tr>
+            <tr>
+                <td><label for="status">Status:</label></td>
+                <td><input type="text" id="status" name="status"></td>
+            </tr>
+        </table>
+        <INPUT class ="main"; type="submit" value="Add the person to application"> <INPUT class ="main"; type="reset">
+    </fieldset>
+</form>
+</body>
+</html>

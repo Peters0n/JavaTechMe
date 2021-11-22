@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Phonebook - Add</a></li>
+            <li class="nav-item"><a href="/listphonebook" class="nav-link">Phonebook - List</a></li>
+            <li class="nav-item"><a href="/applsave" class="nav-link">Application - Add</a></li>
+            <li class="nav-item"><a href="/appl" class="nav-link">Application - List</a></li>
+        </ul>
+    </header>
+
+    <meta charset="UTF-8">
+    <title>Phonebook</title>
+</head>
+
+<body>
+
+
+<div class="container" >
+    <form action="/saveperson" method="post">
+        <div class="row">
+                <div class="input-group" class="form-control">
+                    <div class="col-3">
+                        <span class="input-group-text">First and Last Names</span>
+                    </div>
+                    <div class="col-4">
+                        <input type="text" aria-label="firstname" name="firstname" id="firstname" placeholder="Firstname" class="form-control">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" aria-label="lastname" name="lastname" id="lasttname" placeholder="Lastname" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+
+        <div class="row">
+
+                <div class="input-group flex-nowrap">
+                    <div class="col-3">
+                    <span class="input-group-text">Age</span>
+                    </div>
+                    <div class="col-8">
+                    <input type="text" class="form-control" placeholder="Age" aria-label="age" name="age" id="age"
+                           aria-describedby="age">
+                    </div>
+                </div>
+
+        </div>
+
+        <div class="row">
+                <div class="input-group flex-nowrap">
+                    <div class="col-3">
+                        <span class="input-group-text">Phone number</span>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" class="form-control" placeholder="Phone number" aria-label="phonenumber"
+                               name="phonenumber" id="phonenumber" aria-describedby="phonenumber">
+                    </div>
+                </div>
+
+        </div>
+
+        <div class="row">
+                <div class="input-group flex-nowrap">
+                    <div class="col-3">
+                        <span class="input-group-text">Address</span>
+                    </div>
+                    <div class="col-8">
+                        <input type="text" class="form-control" placeholder="Address" aria-label="address" name="address" id="address"
+                               aria-describedby="address">
+                    </div>
+                </div>
+        </div>
+    <p></p>
+    <input type="submit" value="Add the person to phonebook" class="btn btn-primary btn-sm">
+</form>
+</div>
+
+
+<!--
+<form action="/saveperson" method="post">
+    <h1>Phonebook - Add The Person Page</h1>
+    <fieldset>
+        <legend>Add The Person Page</legend>
+    <ul>
+        <li>
+            <label for="firstname">Firstname:</label>
+            <input type="text" id="firstname" name="firstname">
+        </li>
+        <li>
+            <label for="lastname">Lastname:</label>
+            <input type="text" id="lastname" name="lastname">
+        </li>
+        <li>
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age">
+        </li>
+        <li>
+            <label for="phonenumber">Phonenumber:</label>
+            <input type="text" id="phonenumber" name="phonenumber">
+        </li>
+        <li>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+        </li>
+    </ul>
+        <INPUT type="submit" value="Add the person to phonebook"> <INPUT type="reset">
+    </fieldset>
+</form>
+-->
+
+</body>
+</html>

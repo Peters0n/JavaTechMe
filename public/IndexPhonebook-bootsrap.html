@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Phonebook</title>
+</head>
+<body>
+<h1>Phonebook</h1>
+
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">@</span>
+    </div>
+    <input type="text" class="form-control" placeholder="Имя пользователя" aria-label="Имя пользователя" aria-describedby="basic-addon1">
+</div>
+
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Имя получателя" aria-label="Имя получателя" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2">@example.com</span>
+    </div>
+</div>
+
+<label for="basic-url">Your vanity URL</label>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+    </div>
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text">$</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+    <div class="input-group-append">
+        <span class="input-group-text">.00</span>
+    </div>
+</div>
+
+<div class="input-group">
+    <div class="input-group-prepend">
+        <span class="input-group-text">With textarea</span>
+    </div>
+    <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>
+
+
+<a class="btn btn-primary" data-bs-toggle="collapse" href="index.html" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Return to Phonebook - Add The Person Page
+</a>
+
+
+<table>
+    <td>
+        <tr>
+<form action="/saveperson" method="post">
+    <div class="input-group" class="form-control" class="col-7">
+        <span class="input-group-text">First and last name</span>
+        <input type="text" aria-label="firstname" id="firstname" placeholder="Firstname" class="form-control">
+        <input type="text" aria-label="lastname" id="lasttname" placeholder="Lastname" class="form-control">
+    </div>
+
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text">Age</span>
+        <input type="text" class="form-control" placeholder="Age" aria-label="age" id="age" aria-describedby="age">
+    </div>
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text">Phone number</span>
+        <input type="text" class="form-control" placeholder="Phone number" aria-label="phonenumber" id="phonenumber"
+               aria-describedby="phonenumber">
+    </div>
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text">Address</span>
+        <input type="text" class="form-control" placeholder="Address" aria-label="address" id="address"
+               aria-describedby="address">
+    </div>
+    <input type="submit" value="Add the person to phonebook" class="btn btn-primary btn-lg">
+</form>
+        </tr>
+
+        <tr>
+<div class="bd-example">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Firstname</th>
+            <th scope="col">Lastname</th>
+            <th scope="col">Age</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Address</th>
+        </tr>
+        </thead>
+        <tbody>
+        <p>{{content}}</p>
+        </tbody>
+    </table>
+</div>
+</table>
+
+
+<!-- Дополнительный JavaScript; выберите один из двух! -->
+
+<!-- Вариант 1: Bootstrap в связке с Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+<!-- Вариант 2: Bootstrap JS отдельно от Popper
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+-->
+</body>
+</html>
